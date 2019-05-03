@@ -40,6 +40,7 @@ input {
 	width: 100%;
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus{
@@ -50,6 +51,23 @@ input:focus{
 
 li:nth-child(2n){
 	background: #f7f7f7;
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
 }
 
 #container{
@@ -63,3 +81,9 @@ li:nth-child(2n){
 	color: gray;
 	text-decoration: line-through;
 }
+
+#upper {
+	float: right;
+	margin: 2px 2px auto;
+}
+
